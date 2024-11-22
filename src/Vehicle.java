@@ -7,6 +7,7 @@ public class Vehicle {
     private int rentDays;
     private boolean available;
     //costructors defualt and parametarized
+
     public Vehicle(){
         type="";
         registrationNumber="0";
@@ -18,7 +19,7 @@ public class Vehicle {
     public Vehicle(String type,String registrationNumber,String brand , double rentalRatePerDay,boolean available){
         this.type=type;
         this.registrationNumber=registrationNumber;
-        this.available=available;
+        this.available=true;
         this.rentalRatePerDay=rentalRatePerDay;
         this.brand=brand;
     }
@@ -54,13 +55,13 @@ public class Vehicle {
     Double getRentalRatePerDay(){
         return rentalRatePerDay;
     }
-    void setRentDays(int rentalRatePerDay){
-        this.rentalRatePerDay=rentalRatePerDay;
+    void setRentDays(int rentDays){
+        this.rentDays=rentDays;
     }
     int getRentDays(){
         return rentDays;
     }
-    void setSAvailable(boolean available){
+    public void setAvailable(boolean available){
         this.available=available;
     }
     Boolean getAvailable(){
