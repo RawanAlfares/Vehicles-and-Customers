@@ -1,3 +1,10 @@
+/*
+Rawan Fares Abo Alrous
+ID: 1231043
+lab 1 lecture 1
+Mohammad Helal
+*/
+
 import java.util.Scanner;
 public class Driver {
     static Scanner sc = new Scanner(System.in);
@@ -135,7 +142,7 @@ public class Driver {
             customers[i] = new Customer(name, id, licenseNumber, maxNumber);
             for (int j = 0; j < numberOfVehiclesToRent; j++) {
                 System.out.print("Enter registration number of vehicle " + (j + 1) + " to rent: ");
-               // System.out.print(" Or enter \"exit\" to stop renting : ");
+                System.out.print(" Or enter \"exit\" to stop renting : ");
                 String registrationNumber = sc.next();
                 if (customers[i].getNumberOfCurrentRented() >= maxNumber || registrationNumber.equals("exit")) {
                     System.out.println("Rental process ended by customer " + (i + 1));
@@ -230,8 +237,10 @@ public class Driver {
                     break;
                 case 8:
                     System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("this choice doesn't exist \nonly choosse form (1-8)!");
             }
-
 
         }while (choice!=8);
     }

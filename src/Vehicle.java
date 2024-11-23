@@ -1,3 +1,9 @@
+/*
+Rawan Fares Abo Alrous
+ID: 1231043
+lab 1 lecture 1
+Mohammad Helal
+*/
 public class Vehicle {
     //attributes
     private String type;

@@ -1,3 +1,9 @@
+/*
+Rawan Fares Abo Alrous
+ID: 1231043
+lab 1 lecture 1
+Mohammad Helal
+*/
 public class Customer {
     //attributes
     private String name;
@@ -133,8 +139,8 @@ public class Customer {
     }
     public int countVehiclesByType(String type ){
         int count=0;
-        for( Vehicle v:Driver.availableVehicles)
-                if(v.getType().toLowerCase().equals(type) && !v.getAvailable())
+        for( int i=0;i<numberOfCurrentRented;i++)
+            if(vehiclesRented[i].getType().toLowerCase().equals(type) && !vehiclesRented[i].getAvailable() )
                     count++;
         return count;
     }
